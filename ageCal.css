@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #f1b886;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+h1 {
+    font-family: 'Alice', sans-serif;
+}
+
+.box {
+    position: relative;
+    background: #e8cc96;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 17, 17, 0.705);
+    width: 450px;
+    height: 300px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+input[type="date"] {
+    padding: 8px;
+    width: 85%;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.result {
+    margin-left: 32px;
+    font-size: 16px;
+    width: 81%;
+    color: #171717;
+    background: #f9fafb;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.switchmode {
+  margin-left: 35px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  cursor: pointer;
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.switchmode:hover {
+  transform: scale(1.1);   
+  cursor: pointer;   
+}
+
+hr {
+    border: 1px solid rgb(69, 68, 68); 
+    margin-left: 30px; 
+    margin-right: 29px;
+}
+
+
+/* Dark Mode */
+
+.dark {
+    background: #323232;
+    color: rgb(239, 233, 233);
+}
+
+.dark h1 {
+    color: #fff;
+}
+
+.dark .box {
+    background: #3d3939;
+    box-shadow: 0 4px 12px rgba(205, 202, 202, 0.705);
+}
+
+.dark .result {
+    background: #fff;
+    color: #202121;
+}
+
+.dark .switchmode {
+    color: #fff;
+}
+
+.dark hr {
+    border-color: #c1bdbd;
+}
